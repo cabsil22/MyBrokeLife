@@ -1,6 +1,14 @@
 ## Security Notice
 We take no responsibility for your data. This project is not a production ready project, it is for demonstration purposes only. Don't store real personal information in this system. 
 
+- [Description](#description)
+- [Authentication](#authentication)
+- [Database](#database)
+- [Frontends](#frontends)
+- [TODO Goals](#todo-goals)
+- [Contributors](#contributors)
+
+
 # Description
 
 MyBrokeLife is a RESTful API that allows users to manage their personal finances.
@@ -22,3 +30,16 @@ We use Mongoose because it is easy to integrate MongoDB with Node.js through Mon
 # Frontends
 There are currently no published frontends for the API. We have included thorough API docs so that you can build out a frontend if you want. The API will return a JWT or session cookie representing the authenticated user. You will just need to include this with your requests to authenticate to the endpoints. 
 
+
+# TODO Goals
+- Rewrite the entire project in TypeScript.
+- Implement GraphQL endpoints for advanced querying. 
+- Add currency conversion or goal-tracking features
+- Integrate email notifications for overspending alerts.
+
+# Contributors 
+In no specific order
+- Ovalle-Rodriguez, Jorge
+- Ocampo Hernandez, Arturo
+- Hickman, Tayler
+- Kester, Tom 
