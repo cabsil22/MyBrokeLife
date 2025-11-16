@@ -3,8 +3,18 @@ const { Schema } = mongoose;
 
 const transactionSchema = new Schema(
   {
-    userId: { type: Schema.Types.ObjectId, ref: 'User', required: true, index: true },
-    categoryId: { type: Schema.Types.ObjectId, ref: 'Category', required: true, index: true },
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: true,
+      index: true
+    },
+    categoryId: {
+      type: Schema.Types.ObjectId,
+      ref: 'Category',
+      required: true,
+      index: true
+    },
     amount: {
       type: Number,
       required: true,
@@ -20,9 +30,14 @@ const transactionSchema = new Schema(
       required: true,
       index: true
     },
-    description: { type: String, trim: true },
-    // Could add currency / account later
-    currency: { type: String, default: 'USD' }
+    description: {
+      type: String,
+      trim: true
+    },
+    currency: {
+      type: String,
+      default: 'USD'
+    }
   },
   { timestamps: true }
 );

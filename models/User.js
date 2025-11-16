@@ -12,18 +12,25 @@ const userSchema = new mongoose.Schema(
       required: true,
       index: true
     },
-    name: { type: String, required: true },
+    name: {
+      type: String,
+      required: true,
+      trim: true
+    },
     email: {
       type: String,
       required: true,
       lowercase: true,
       index: true
     },
-    avatar: { type: String }
+    avatar: {
+      type: String
+    }
   },
   { timestamps: true }
 );
 
+// Each providerId is unique per provider
 userSchema.index({ provider: 1, providerId: 1 }, { unique: true });
 
 module.exports = mongoose.model('User', userSchema);
