@@ -1,0 +1,33 @@
+{
+  "name": "mybrokelife",
+  "version": "1.0.0",
+  "description": "We take no responsibility for your data. This project is not a production ready project, it is for demonstration purposes only. Don't store real personal information in this system.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabsil22/MyBrokeLife.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cabsil22/MyBrokeLife/issues"
+  },
+  "homepage": "https://github.com/cabsil22/MyBrokeLife#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^9.0.0",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
